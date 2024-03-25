@@ -1,0 +1,504 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/bootstrap.min.css' %}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <title>Ethalle Cakes and Bakes</title>
+    <link rel="icon" href="https://i.imgur.com/Gu07EOi.png" />
+    <style>
+      /* Custom styles for the hamburger menu */
+      .hamburger-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+
+    <!-- Start navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#Welcome">
+          <img
+            src="https://i.imgur.com/Gu07EOi.png"
+            width="60"
+            height="60"
+            class="d-inline-block"
+            alt=""
+          />
+          Ethalle's Cakes and Bakes
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Welcome">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Baked"> Home Baked Goods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Orders">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#OurLocation">Covered Area</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!--- Start Custom Carousel -->
+    <div id="customCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/1200x500?text=First+Slide"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500?text=Second+Slide"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500?text=Third+Slide"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#customCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#customCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--- End Custom Carousel -->
+
+    <!--Page container-->
+    <div class="container">
+
+      <!--- Start of Baked Goods-->
+
+      <div class="row" id="Baked">
+        <div class="col navMenu">
+          <h2 class="text-center">~ Home Baked Goods ~</h2>
+        </div>
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-4" data-aos="slide-up">
+          <div class="card view zoom">
+            <img
+              class="card-img-top img-fluid"
+              src="{% static 'images/meat-menu.jpg' %}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">~ Meat Menu ~</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Bocconcini di carne in nido di sfoglia
+                </li>
+                <li class="list-group-item">Bruschette con maiale al curry</li>
+                <li class="list-group-item">Uova al prosciutto</li>
+                <li class="list-group-item">Vitello tonnato</li>
+                <li class="list-group-item">
+                  Fesa di tacchino marinata con olive
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="slide-up">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="{% static 'images/fish-menu.jpg' %}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">~ Fish Menu ~</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Carpaccio di polpo</li>
+                <li class="list-group-item">Cozze al verde</li>
+                <li class="list-group-item">Cocktail di gamberi</li>
+                <li class="list-group-item">Risotto alla crema di scampi</li>
+                <li class="list-group-item">
+                  Ravioli di pesce con crema di scampi
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="slide-up">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="{% static 'images/menu-vegetarian.jpg' %}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">~ Vegetarian Menu ~</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Parmigiana di melanzane</li>
+                <li class="list-group-item">Strudel con ricotta e spinaci</li>
+                <li class="list-group-item">Polpette di spinaci e ricotta</li>
+                <li class="list-group-item">Frittata di patate al forno</li>
+                <li class="list-group-item">
+                  Spaghetti con le polpettine vegetariane
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--- End of Menu -->
+
+      <!--- About-->
+      <div class="row" id="About">
+        <div class="col navMenu">
+          <h2 class="text-center">~ About Me ~</h2>
+        </div>
+        <div class="row bg-light">
+          <div class="col-md-6">
+            <h3>Homemade</h3>
+            <p>
+              Fresh baked goods with quality ingredients. Ethalle's Cakes and
+              Bakes offers you the best of both worlds: everything is homemade,
+              right in her kitchen.
+            </p>
+            <h5>My Growing passion</h5>
+            <p>
+              As a Public Health Research Associate by profession, my goal is to
+              ensure quality ingredients that are safely kept and preserved for
+              freshness. I love bringing flavor, art, and health into my
+              homemade cakes, cupcakes, and macarons, (or anything else you're
+              craving!). It's amazing to celebrate with my customers when they
+              enjoy delicious treats and go, "wow this tastes amazing!"
+              <br />
+              <br />
+              I look forward to serving you in any or every special occasion as
+              you enjoy the sweetness of life with family and friends!
+            </p>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <img class="img-fluid" src="https://i.imgur.com/WSglOyn.jpeg" />
+          </div>
+        </div>
+        <div class="row bg-light">
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <div class="row bg-light">
+          <div class="col-md-6 order-md-1 order-2" data-aos="fade-up">
+            <img class="img-fluid" src="https://i.imgur.com/BNjhh7h.jpeg" />
+          </div>
+
+          <div class="col-md-6 order-md-12 order-1">
+            <h3>Ingredients</h3>
+            <p>
+              All our baked goods are crafted using natural ingredients. Some
+              products may contain nuts, eggs, or peanuts. Please inform us of
+              any allergies or restrictions, and we'll accommodate your needs
+              when preparing your order.
+            </p>
+            <h5>Certified</h5>
+            <p>
+              I am licensed under the Illinois Department of Public Health's
+              Cottage Food Law, which allows me to legally bake and sell goods
+              from my home kitchen. This means that all of my baked goods are
+              made in compliance with state regulations, ensuring their safety
+              and quality. You can trust that when you order from me, you're
+              receiving products that meet the highest standards of cleanliness
+              and hygiene .
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--- End of About -->
+
+      <!--- Start of Reservation-->
+      <div class="row" id="Orders">
+        <div class="col navMenu">
+          <h2 class="text-center">~ Reservation ~</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 reserve-container" data-aos="fade-up">
+          <img
+            class="img-fluid image-reserve"
+            src="{% static 'images/reserve.jpg' %}"
+          />
+
+          <div class="reserve-text col-lg-12">
+            <h1 class="text-center">Timetables</h1>
+            <div class="row">
+              <div class="col-6">
+                <h2 class="text-center">Lunch</h2>
+                <h5 class="text-center">12:00 - 15:00</h5>
+              </div>
+              <div class="col-6">
+                <h2 class="text-center">Dinner</h2>
+                <h5 class="text-center">19:30 - 23:30</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row bg-light">
+        <div class="col">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <h3>Reserve</h3>
+                <label for="inputDate"> Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="inputDate"
+                  placeholder="Data gg/mm/aaaa"
+                />
+              </div>
+              <div class="form-group col-6">
+                <h3>Details</h3>
+                <label for="inputName"> Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group col-6">
+                <label for="inputTime"> Timetables</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  id="inputTime"
+                  placeholder="Timetables"
+                />
+              </div>
+              <div class="form-group col-6">
+                <label for="inputEmail"> Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group col-6">
+                <label for="inputNumber"> Number of Guests</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputNumber"
+                  placeholder="Number of Guests"
+                />
+              </div>
+              <div class="form-group col-6">
+                <label for="inputCel"> Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputCel"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="form-group col-12">
+                <label for="inputComment"> Further requests</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  id="inputComment"
+                  placeholder="Further requests"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <button type="submit" class="btn btn-secondary btn-block">
+                  Reserve
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--- End of Reserve -->
+      <!--- Start of Our Location -->
+      <div class="row" id="OurLocation">
+        <div class="col navMenu">
+          <h2 class="text-center">~ Our Location ~</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div id="map" class="col-md-9 map"></div>
+        <div class="col-md-3">
+          <h3>Address:</h3>
+          <p>Viale Enrico Fermi, 20159 Milan, Mailand (Lombardia)</p>
+          <h3>Email:</h3>
+          <p>mail@example.com</p>
+        </div>
+      </div>
+      <!--- End of Our Location -->
+      <div class="row footer bg-light">
+        <div class="col">
+          <p class="text-center">
+            Follow us:
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/rubiktechnologiesShpk/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              class="social-icon"
+              href="https://www.instagram.com/rubiktechnologies/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center">Copyright &copy; 2018</p>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            Powered by:
+            <a href="https://rubik-technologies.com/">Rubik Technologies</a>
+          </p>
+        </div>
+      </div>
+
+      <footer class="container">
+        <div class="row only-mobile">
+          <div class="col-6">
+            <a
+              class="btn btn-primary btn-block text-center"
+              href="tel:++390000000"
+              ><i class="fa fa-phone" aria-hidden="true"></i> Call</a
+            >
+          </div>
+          <div class="col-6">
+            <a
+              class="btn btn-success btn-block text-center"
+              href="https://api.whatsapp.com/send?phone=+390000000"
+              ><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--End of page container-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- Your custom JavaScript files -->
+
+    <!-- scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/smooth-scroll.js' %}"
+    ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/image-effect.js' %}"
+    ></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap"
+    ></script>
+  </body>
+</html>

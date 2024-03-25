@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    display: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.burger-menu {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 1001;
+}
+
+.menu-toggle:checked + .menu {
+    display: block;
+}
+
+section {
+    margin-top: 50px; /* Adjust as needed */
+    padding: 20px;
+}
